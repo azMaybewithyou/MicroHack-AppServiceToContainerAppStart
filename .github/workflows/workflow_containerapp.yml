@@ -43,12 +43,12 @@ jobs:
     - name: Deploy to Container App
       uses: azure/container-apps-deploy-action@v2
       with:
-      imageToDeploy: tostzmaslemregistry.azurecr.io/microhackapp:${{ steps.get_tag.outputs.image_tag }}
-      acrUsername: ${{ secrets.ACR_USERNAME }}
-      acrPassword: ${{ secrets.ACR_PASSWORD }}
-      resourceGroup: MicroHack-AppServiceToContainerApp
-      containerAppEnvironment: microhack-containerenvironment-tosty
-      containerAppName: microhack-tosty-containerapp
-      targetPort: 8080
+        imageToDeploy: tostzmaslemregistry.azurecr.io/microhackapp:${{ steps.get_tag.outputs.image_tag }}
+        acrUsername: ${{ secrets.ACR_USERNAME }}
+        acrPassword: ${{ secrets.ACR_PASSWORD }}
+        resourceGroup: MicroHack-AppServiceToContainerApp
+        containerAppEnvironment: microhack-containerenvironment-tosty
+        containerAppName: microhack-tosty-containerapp
+        targetPort: 8080
        
       
