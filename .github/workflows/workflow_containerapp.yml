@@ -51,5 +51,7 @@ jobs:
         containerAppEnvironment: microhack-containerenvironment-tosty
         containerAppName: microhack-tosty-containerapp
         targetPort: 8080
+        environmentVariables: |
+          API_URL=https://microhack-aiapp.blackbay-b1f0b373.westeurope.azurecontainerapps.io
        
       
