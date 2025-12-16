@@ -1,0 +1,5 @@
+name: Build and Push Image
+  run: |
+    az acr login --name tostzmaslemRegistry --username ${{ secrets.ACR_USERNAME }} --password ${{ secrets.ACR_PASSWORD }} &&
+    docker build -t tostzmaslemRegistry.azurecr.io/microhackapp:1 -f Dockerfile . &&
+    docker push microhackregistry.azurecr.io/microhackapp:1
